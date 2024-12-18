@@ -1,0 +1,7 @@
+apiVersion: apps/v1    
+kind: ConfigMap     
+metadata:       
+  name: my-app-config     
+data:       
+  REACT_APP_USERNAME: "ZAGAYNOVA_KRISTINA"       
+  REACT_APP_COMPANY_NAME: "MY_COMPANY"     

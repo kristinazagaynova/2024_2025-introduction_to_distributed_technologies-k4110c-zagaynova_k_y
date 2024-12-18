@@ -1,0 +1,32 @@
+apiVersion: apps/v1     
+kind: ReplicaSet     
+metadata:       
+  name: my-app-rs     
+spec:       
+  replicas: 2       
+  selector:        
+    matchLabels:           
+      app: my-app       
+  template:         
+    metadata:           
+      labels:             
+        app: my-app         
+    spec:           
+      containers:          
+      - name: my-app-container             
+        image: ifilyaninitmo/itdt-contained-frontend:master             
+        env:
+        - name: REACT_APP_USERNAME
+          valueFrom:
+              configMapKeyRef:
+                name: my-app-config 
+                key:  react_app_username
+        - name: REACT_APP_COMPANY_NAME
+          valueFrom:
+              configMapKeyRef:
+                name: my-app-config 
+                key: react_app_company_name
+        ports:
+        - containerPort: 3000
+
+
