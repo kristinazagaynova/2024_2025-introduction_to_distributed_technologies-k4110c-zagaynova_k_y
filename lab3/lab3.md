@@ -85,7 +85,7 @@ openssl genrsa -out private.key 2048
 ```
 openssl req -new -key private.key -out request.csr
 ```
-И создадаим самоподписанный сертификат с помощью следующей команды:
+И создадим самоподписанный сертификат с помощью следующей команды:
 ```
 openssl x509 -req -days 365 -in request.csr -signkey private.key -out certificate.crt
 ```
