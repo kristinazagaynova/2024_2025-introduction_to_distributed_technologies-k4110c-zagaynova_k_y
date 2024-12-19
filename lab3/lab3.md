@@ -70,7 +70,9 @@ spec:
 
 ```
 Проверим созданый ConfigMap и ReplicaSet
+
 ![img1](./img1.png)
+
 ![img2](./img2.png)
 
 3.Cгенерируем закрытый ключ с помощью команды
