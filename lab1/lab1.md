@@ -31,6 +31,7 @@ Date of finished:
 ![img2](./img2.png)
 
 2.Установим minikube 
+
 ![img3](./img3.jpg)
 
 3. Развернем minikube cluster с помомщью команды (Рисунок 4)
