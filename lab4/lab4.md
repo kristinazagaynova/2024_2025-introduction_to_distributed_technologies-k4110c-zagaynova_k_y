@@ -20,7 +20,6 @@ Date of finished:
 ## Ход работы
 
 ### Сети связи в Minikube, CNI и CoreDNS
- 2 ноды 
 
 1. Запустим minikube с подключенным плагином CNI=calico, режимом работы Multi-Node Clusters и двумя нодами
 
